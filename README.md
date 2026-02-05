@@ -2,7 +2,7 @@
 # TX Futures Rolling Backtest  
 Taiwan Index Futures Rolling Strategy Backtesting
 
-## 📌 Project Overview
+##  Project Overview
 This project implements a **rolling backtest framework for Taiwan Index Futures (TX)**, developed as **Assignment 1 for the EDGE Internship**.
 
 The objective is to simulate a futures trading strategy that **rolls positions N days before contract expiration**, compute daily PnL based on closing prices, and compare the resulting performance against a benchmark strategy that uses **continuous futures prices without explicit rolling**.
@@ -14,7 +14,7 @@ The analysis covers the period **2014–2024** and focuses on accurately modelin
 
 ---
 
-## 📊 Data Description
+## Data Description
 The following datasets are used:
 - **TX Futures Monthly Trading Data** (from TEJ Pro)  
 - **TX Futures Daily Transaction Data** (from Taiwan Futures Exchange)
@@ -25,7 +25,7 @@ Each trading day contains multiple contracts with different expiration months. C
 
 ---
 
-## 🔁 Rolling Strategy Logic
+## Rolling Strategy Logic
 For a given rolling parameter **N (days before expiration)**:
 
 1. Identify the front and next contracts based on trading volume
@@ -41,7 +41,7 @@ This approach avoids static contract classification and allows contracts to **dy
 
 ---
 
-## 💰 Rolling Cost Modeling
+## Rolling Cost Modeling
 Rolling costs are defined as:
 
 \[
@@ -57,7 +57,7 @@ This design allows rolling costs to be **positive or negative**, depending on ma
 
 ---
 
-## 📈 Performance Evaluation
+## Performance Evaluation
 The following performance metrics are computed:
 - Annualized Return
 - Annualized Volatility
@@ -73,14 +73,14 @@ Empirical results show that **explicit rolling strategies outperform simple cont
 
 ---
 
-## 🛠️ Implementation
+## Implementation
 - Language: **Python**
 - Environment: **Google Colab**
 - Core libraries: `pandas`, `numpy`, `matplotlib`
 
 The full implementation notebook is available here:  
-🔗 https://colab.research.google.com/drive/1AezhMI4NQkLAIVd47-7h08xZO7Po0oga
+[https://colab.research.google.com/drive/1AezhMI4NQkLAIVd47-7h08xZO7Po0oga](https://colab.research.google.com/drive/1yNmDBYGc0q9rfr5ZkLzKphvBT8UWBkKD)
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
